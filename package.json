@@ -5,15 +5,19 @@
   "license": "ISC",
   "main": "index.js",
   "dependencies": {
+    "isomorphic-fetch": "latest",
+    "mysql": "^2.14.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "redux": "^3.7.2",
     "react-redux": "^5.0.6",
-    "redux-actions": "^2.2.1",
-    "redux-saga": "^0.15.6",
     "react-router": "^4.1.2",
     "react-router-dom": "^4.1.2",
-    "isomorphic-fetch": "latest"
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-saga": "^0.15.6",
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "koa2-cors": "^2.0.3"
   },
   "scripts": {
     "build": "webpack",

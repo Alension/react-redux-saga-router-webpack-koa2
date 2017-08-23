@@ -4,6 +4,7 @@ const babelpolyfill = require("babel-polyfill");
 module.exports = {
     context: __dirname,
     entry:  [
+        'babel-polyfill',
         'react-hot-loader/patch',
         'webpack/hot/only-dev-server',
         './src/app.js'

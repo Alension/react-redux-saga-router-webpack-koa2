@@ -16,24 +16,22 @@ const store = createStore(
     reducers,
     applyMiddleware(sagaMiddleware));
 
-sagaMiddleware.run(rootSaga)
+sagaMiddleware.run(rootSaga);
 
 const render =  (Component) => {
     ReactDOM.render(
-    <AppContainer>
-        <Provider store={store}>
-            <Component />
-        </Provider>
-    </AppContainer>,
+        <AppContainer>
+            <Provider store={store}>
+                <Component/>
+            </Provider>
+        </AppContainer>,
         document.getElementById('container')
-)
+        )
 };
 render(IndexC);
 
 if(module.hot) {
-    module.hot.accept('./container/index', () => {
-        render(Index)
-    });
+    module.hot.accept();
 }
 
 
